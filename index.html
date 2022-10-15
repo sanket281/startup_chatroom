@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gedu's Chat Room</title>
+    <script defer src="http://localhost:4000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Mouse+Memoirs&family=Poppins:wght@700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <div class="header">
+        <!-- <img src="cat.png" alt=""> -->
+        <img src="StoryItUp.png" alt="">
+        
+    </div>
+    <div>
+        <div class="container">
+            <!-- <div class="right">
+                Gedu:Hey there
+            </div>
+            <div class="left">
+                golu:Hey
+            </div> -->
+        </div>
+    </div>
+
+    <div class="send">
+        <form action="/addname" id="send-container" method="post">
+            <input type="text" placeholder="Type your message here" id ="messageInp" name="message">
+            <button class="btn">SEND</button>
+        </form>
+    </div>
+   
+</body>
+</html>
